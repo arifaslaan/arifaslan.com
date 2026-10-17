@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arif ASLAN</title>
+  <meta name="description" content="Arif ASLAN: 11+ yıldır öğreniyor, öğrendikleriyle bir şeyler geliştiriyor.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👋</text></svg>">
+  <style>
+    :root {
+      --bg: #e5e7eb;
+      --text: #111;
+      --muted: #9ca3af;
+      --border: #9ca3af;
+      --accent: #4ade80;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #16181d; --text: #f3f4f6; --muted: #6b7280; --border: #4b5563; }
+    }
+    * { box-sizing: border-box; margin: 0; }
+    html, body { height: 100%; }
+    body {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      padding: 2rem 1rem; background: var(--bg); color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.5; text-align: center;
+    }
+    .avatar-wrap {
+      position: relative; display: inline-flex; align-items: center; justify-content: center;
+      margin-bottom: 2rem; outline: none;
+    }
+    .avatar-wrap p { position: absolute; z-index: 0; font-weight: 700; }
+    .avatar {
+      position: relative; z-index: 10; width: 14rem; height: 14rem; max-width: 60vw; max-height: 60vw;
+      border-radius: 9999px; object-fit: cover; background: #7f1d1d;
+      border: 4px solid var(--border);
+      filter: drop-shadow(0 10px 8px rgb(0 0 0 / .04)) drop-shadow(0 4px 3px rgb(0 0 0 / .1));
+      transition: all .3s cubic-bezier(.4, 0, .2, 1);
+    }
+    .avatar-wrap:hover .avatar,
+    .avatar-wrap:focus .avatar {
+      transform: translateY(-8rem); border-color: var(--accent);
+      filter: drop-shadow(0 25px 25px rgb(0 0 0 / .15));
+    }
+    h1 { font-size: 1.875rem; line-height: 2.25rem; font-weight: 700; }
+    .tagline { padding-bottom: 2rem; color: var(--muted); }
+    .bio { max-width: 40rem; padding: 0 1rem 2rem; font-size: .875rem; }
+    .contact { display: flex; flex-direction: column; font-size: .875rem; font-weight: 700; }
+    .contact a { color: inherit; text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+    @media (prefers-reduced-motion: reduce) { .avatar { transition: none; } }
+  </style>
+</head>
+<body>
+  <div class="avatar-wrap" tabindex="0">
+    <img class="avatar" src="/arifaslan.jpeg" alt="Arif ASLAN'ın portresi" width="224" height="224">
+    <p>yaşa!</p>
+  </div>
+
+  <h1>Arif ASLAN</h1>
+  <span class="tagline">aşık | maşuk | rakip</span>
+
+  <p class="bio">
+    11+ yıldır öğreniyorum. Öğrendiklerim ile bir şeyler geliştiriyorum.
+    Geliştirdiklerim ile hayatımı sürdürmeye devam ediyorum.
+  </p>
+
+  <div class="contact">
+    <a href="mailto:iam@arifaslan.com">iam@arifaslan.com</a>
+    <a href="mailto:arifaslaan@gmail.com">arifaslaan@gmail.com</a>
+  </div>
+</body>
+</html>
